@@ -4,13 +4,13 @@
 // @version      0.1.0
 // @description  Adds info from and links to SteamDB and ProtonDB (Proton Linux compatibility)
 // @author       Mark Snyder
-// updateURL     https://raw.githubusercontent.com/mkwsnyder/marks-steam-script/main/script.js
+// updateURL     https://raw.githubusercontent.com/mkwsnyder/marks-steam-script/main/scripts/marks-steam-script/script.js
 // @match        https://store.steampowered.com/app/*
 // @icon         https://www.google.com/s2/favicons?domain=steampowered.com
 // @grant        GM_xmlhttpRequest
 // ==/UserScript==
 
-/* made this in like 30 minutes so don't judge quality lol */
+// made this in like 30 minutes so don't judge quality lol
 
 (() => {
     'use strict';

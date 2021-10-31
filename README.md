@@ -1,31 +1,15 @@
-# Mark's Steam Script
+# Mark's User Scripts
 
-Adds info from, and links to, [SteamDB](https://steamdb.info/) and [ProtonDB](https://www.protondb.com/) (Proton Linux compatibility).
+This is where I keep random scripts that I've made.
 
-**Note**: this only works in web browsers, not the official Steam client.
+## Scripts
 
-![Preview Image](./preview.png)
+- [Mark's Steam Script](./scripts/marks-steam-scripts/)
 
 ## How to Install
 
-This requires [Tampermonkey](https://www.tampermonkey.net/) extension or some equivalent.
+These scripts require the [Tampermonkey](https://www.tampermonkey.net/) extension or some equivalent.
 
 - [Firefox](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)
 - [Chrome](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
 
-### Manual Install
-
-1. Install Tampermonkey
-2. Go to the Tampermonkey Dashboard (this can be accessed by clicking on the Tampermonkey icon in your toolbar and selecting "Dashboard" from the dropdown)
-3. Go to the "Utilities" tab on the right
-4. Copy [this link](https://raw.githubusercontent.com/mkwsnyder/marks-steam-script/main/script.js) and paste it into the "Install from URL" option, then click "Install".
-5. Click "Install" on the next screen
-
-### Greasy Fork Install
-
-1. Install Tampermonkey
-2. Install the script via [Greasy Fork](https://greasyfork.org/en/scripts/434702-mark-s-steam-script)
-
-## Notes
-
-When you first view a page where it will run (a page for a game) it will ask you if it can make a web request. This is simply getting a JSON file from [ProtonDB](https://www.protondb.com/) for the Linux compatibility. Always allowing it will make it run without issue.
