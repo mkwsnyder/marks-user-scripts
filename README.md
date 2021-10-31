@@ -18,13 +18,13 @@ This requires [Tampermonkey](https://www.tampermonkey.net/) extension or some eq
 1. Install Tampermonkey
 2. Go to the Tampermonkey Dashboard (this can be accessed by clicking on the Tampermonkey icon in your toolbar and selecting "Dashboard" from the dropdown)
 3. Go to the "Utilities" tab on the right
-4. Copy [this link]() and paste it into the "Install from URL" option, then click "Install".
+4. Copy [this link](https://raw.githubusercontent.com/mkwsnyder/marks-steam-script/main/script.js) and paste it into the "Install from URL" option, then click "Install".
 5. Click "Install" on the next screen
 
 ### Greasy Fork Install
 
 1. Install Tampermonkey
-2. Install the script via [Greasy Fork]()
+2. Install the script via [Greasy Fork](https://greasyfork.org/en/scripts/434702-mark-s-steam-script)
 
 ## Notes
 
