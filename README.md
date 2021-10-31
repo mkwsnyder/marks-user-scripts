@@ -4,7 +4,9 @@ This is where I keep random scripts that I've made.
 
 ## Scripts
 
-- [Mark's Steam Script](https://github.com/mkwsnyder/marks-user-scripts/tree/main/scripts/marks-steam-script)
+[### Mark's Steam Script](https://github.com/mkwsnyder/marks-user-scripts/tree/main/scripts/marks-steam-script)
+
+**Description**: Adds info from, and links to, [SteamDB](https://steamdb.info/) and [ProtonDB](https://www.protondb.com/) (Proton Linux compatibility).
 
 ## How to Install
 
