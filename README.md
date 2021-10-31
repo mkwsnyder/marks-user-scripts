@@ -4,7 +4,7 @@ This is where I keep random scripts that I've made.
 
 ## Scripts
 
-- [Mark's Steam Script](./scripts/marks-steam-scripts/)
+- [Mark's Steam Script](https://github.com/mkwsnyder/marks-user-scripts/tree/main/scripts/marks-steam-script)
 
 ## How to Install
 
