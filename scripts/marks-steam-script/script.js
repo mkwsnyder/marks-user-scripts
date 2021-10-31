@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Mark's Steam Script
 // @namespace    http://tampermonkey.net/
-// @version      0.1.0
+// @version      0.1.1
 // @description  Adds info from and links to SteamDB and ProtonDB (Proton Linux compatibility)
 // @author       Mark Snyder
 // updateURL     https://raw.githubusercontent.com/mkwsnyder/marks-user-scripts/main/scripts/marks-steam-script/script.js
@@ -43,7 +43,15 @@
         url: protonDBurlApi,
         onload: (r) => {
 
-            let json = JSON.parse(r.responseText);
+            // console.log(r);
+
+            let json;
+
+            try {
+                json = JSON.parse(r.responseText);
+            } catch (e) {
+                json = {};
+            }
 
             let backgroundColor;
             let textColor = 'black';
