@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Mark's Steam Script
 // @namespace    http://tampermonkey.net/
-// @version      0.1.1
+// @version      0.1.2
 // @description  Adds info from and links to SteamDB and ProtonDB (Proton Linux compatibility)
 // @author       Mark Snyder
 // updateURL     https://raw.githubusercontent.com/mkwsnyder/marks-user-scripts/main/scripts/marks-steam-script/script.js
@@ -77,6 +77,10 @@
                     break;
                 case 'borked':
                     backgroundColor = 'red';
+                    break;
+                default:
+                    backgroundColor = 'gray'
+                    json.tier = 'no info';
                     break;
             }
 
