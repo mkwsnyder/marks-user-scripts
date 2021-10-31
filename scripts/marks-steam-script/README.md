@@ -4,7 +4,7 @@ Adds info from, and links to, [SteamDB](https://steamdb.info/) and [ProtonDB](ht
 
 **Note**: this only works in web browsers, not the official Steam client.
 
-![Preview Image](./preview.png)
+![Preview Image](./preview.jpg)
 
 ## How to Install
 
