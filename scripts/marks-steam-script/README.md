@@ -8,7 +8,7 @@ Adds info from, and links to, [SteamDB](https://steamdb.info/) and [ProtonDB](ht
 
 ## How to Install
 
-This requires [Tampermonkey](https://www.tampermonkey.net/) extension or some equivalent.
+This requires the [Tampermonkey](https://www.tampermonkey.net/) extension or some equivalent.
 
 - [Firefox](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)
 - [Chrome](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
