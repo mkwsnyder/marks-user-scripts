@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         Mark's Omni CMS Script
 // @namespace    https://mark-snyder.ou.usu.edu/
-// @version      0.6.5
+// @version      0.6.6
 // @description  Adds functionality to the CMS formerly known as OU Campus
 // @author       Mark Snyder
-// @updateURL    https://mark-snyder.ou.usu.edu/_resources/js/marks-omni-cms-script.js
+// @updateURL    https://raw.githubusercontent.com/mkwsnyder/marks-user-scripts/master/scripts/marks-omni-cms-script/marks-omni-cms-script.js
 // @match        https://a.cms.omniupdate.com/11/*
 // @icon         https://www.google.com/s2/favicons?domain=omniupdate.com
 // @grant        none
@@ -44,7 +44,7 @@
  */
 
 const VER = '0.6'; // only for major updates
-const VER_DISPLAY = '0.6.5'; // version to display in modal
+const VER_DISPLAY = '0.6.6'; // version to display in modal
 
 const RETRY_TIMEOUT = 250;
 const LOOP_TIMEOUT = 200;
@@ -99,7 +99,15 @@ const MOS_SETTINGS = {
 (() => {
   'use strict';
 
-  // check for url match so it doesn't run in iframes
+  // if the page hasn't loaded yet, retry
+  if (!document.querySelector('.page-path')) {
+    setTimeout(init, RETRY_TIMEOUT);
+  }
+
+})();
+
+function init() {
+  // check for url match, so it doesn't run in iframes
   if (window.MOS || window.location !== window.parent.location) return;
   loadSettingsFromStorage();
 
@@ -118,8 +126,7 @@ const MOS_SETTINGS = {
   }
 
   setInterval(ouLoop, LOOP_TIMEOUT);
-
-})();
+}
 
 function ouLoop() {
 
@@ -677,7 +684,7 @@ function insertDarkMode() {
   let el = document.createElement('style');
   el.id = 'mos-dark-mode';
 
-  // yes I know it's a style tag inside of a style tag, it's so that I get syntax highlighting in PHPStorm :P
+  // yes I know it's a style tag inside a style tag, it's so that I get syntax highlighting in PHPStorm :P
   el.innerHTML += `
 /*<style>*/
 :root {
